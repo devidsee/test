@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: motoman_gp25_support
+    relative_path: urdf/gp25.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/motoman_gp25.srdf
+  CONFIG:
+    author_name: wyb
+    author_email: wyb@qq.com
+    generated_timestamp: 1684846858

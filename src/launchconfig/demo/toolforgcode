@@ -1,0 +1,25 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import numpy as np
+ 
+stl_path='/home/wangyabin/桌面/22222.stl'
+points=[]
+f = open(stl_path,'utf8')
+lines = f.readlines()
+prefix='vertex'
+num=3
+for line in lines:
+    #print (line)
+ 
+    if line.startswith(prefix):
+ 
+        values = line.strip().split()
+        #print(values[1:4])
+        if num%3==0:
+          points.append(values[1:4])
+          num=0
+        num+=1
+    #print(type(line))
+points=np.array(points)
+f.close()
+print(points.shape)
