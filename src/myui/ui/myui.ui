@@ -6,197 +6,261 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1402</width>
+    <height>935</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(211, 215, 207);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QGraphicsView" name="pic1">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>30</y>
-      <width>251</width>
-      <height>221</height>
+      <y>40</y>
+      <width>301</width>
+      <height>271</height>
      </rect>
     </property>
    </widget>
    <widget class="QTabWidget" name="tab_control">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>0</y>
-      <width>381</width>
-      <height>391</height>
+      <x>960</x>
+      <y>20</y>
+      <width>411</width>
+      <height>531</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab_con1">
      <attribute name="title">
       <string>控制</string>
      </attribute>
-     <widget class="QWidget" name="">
+     <widget class="SwitchBtn" name="rb_switch" native="true">
       <property name="geometry">
        <rect>
-        <x>1</x>
-        <y>20</y>
-        <width>374</width>
-        <height>281</height>
+        <x>10</x>
+        <y>70</y>
+        <width>71</width>
+        <height>21</height>
        </rect>
       </property>
-      <layout class="QGridLayout" name="gridLayout">
-       <item row="0" column="0">
-        <widget class="QLabel" name="label_7">
-         <property name="text">
-          <string>机器人</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QPushButton" name="rob_open">
-         <property name="text">
-          <string>开</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="2">
-        <widget class="QPushButton" name="rob_close">
-         <property name="text">
-          <string>关</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="3">
-        <widget class="QPushButton" name="rob_start">
-         <property name="text">
-          <string>开始</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0">
-        <widget class="QLabel" name="label_2">
-         <property name="text">
-          <string>送粉</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QPushButton" name="push_open">
-         <property name="text">
-          <string>开</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="2">
-        <widget class="QPushButton" name="push_close">
-         <property name="text">
-          <string>关</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="3">
-        <widget class="QProgressBar" name="push_pro">
-         <property name="value">
-          <number>24</number>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="4">
-        <widget class="QSpinBox" name="push_sb"/>
-       </item>
-       <item row="2" column="0">
-        <widget class="QLabel" name="label">
-         <property name="text">
-          <string>激光</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="QPushButton" name="layer_open">
-         <property name="text">
-          <string>开</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="2">
-        <widget class="QPushButton" name="layer_close">
-         <property name="text">
-          <string>关</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="3">
-        <widget class="QProgressBar" name="layer_pro">
-         <property name="value">
-          <number>24</number>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="4">
-        <widget class="QSpinBox" name="layer_sb"/>
-       </item>
-       <item row="3" column="0">
-        <widget class="QLabel" name="label_5">
-         <property name="text">
-          <string>温度</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="1">
-        <widget class="QPushButton" name="tem_open">
-         <property name="text">
-          <string>开</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="2">
-        <widget class="QPushButton" name="tem_close">
-         <property name="text">
-          <string>关</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="3">
-        <widget class="QLabel" name="tem">
-         <property name="text">
-          <string>            °C</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="0">
-        <widget class="QLabel" name="label_20">
-         <property name="text">
-          <string>扫描</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="1">
-        <widget class="QPushButton" name="scan_open">
-         <property name="text">
-          <string>开</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="2">
-        <widget class="QPushButton" name="scan_close">
-         <property name="text">
-          <string>关</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
+      <property name="sizeIncrement">
+       <size>
+        <width>20</width>
+        <height>10</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>20</width>
+        <height>10</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="SwitchBtn" name="rb_push" native="true">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>70</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="SwitchBtn" name="rb_temp" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>190</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="SwitchBtn" name="rb_layer" native="true">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>70</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="SwitchBtn" name="rb_scan" native="true">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>190</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>40</y>
+        <width>30</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>送粉</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>150</y>
+        <width>30</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>温度</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>40</y>
+        <width>30</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>激光</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>150</y>
+        <width>30</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>扫描</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>45</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>机器人</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="push_sb">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>100</y>
+        <width>44</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="tem">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>56</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>            °C</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="layer_sb">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>100</y>
+        <width>44</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="rob_start">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>开始</string>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="layer_pro">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>100</y>
+        <width>95</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="push_pro">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>100</y>
+        <width>81</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
      </widget>
     </widget>
     <widget class="QWidget" name="tab_con2">
      <attribute name="title">
       <string>连接</string>
      </attribute>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -367,10 +431,10 @@
    <widget class="QGraphicsView" name="pic2">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>300</y>
-      <width>251</width>
-      <height>241</height>
+      <x>360</x>
+      <y>40</y>
+      <width>311</width>
+      <height>271</height>
      </rect>
     </property>
    </widget>
@@ -390,8 +454,8 @@
    <widget class="QLabel" name="label_22">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>270</y>
+      <x>370</x>
+      <y>10</y>
       <width>67</width>
       <height>17</height>
      </rect>
@@ -400,19 +464,50 @@
      <string>相机2图片</string>
     </property>
    </widget>
+   <widget class="QGraphicsView" name="pic3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>380</y>
+      <width>301</width>
+      <height>271</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_27">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>340</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>扫描</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>1402</width>
      <height>28</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SwitchBtn</class>
+   <extends>QWidget</extends>
+   <header location="global">switchbtn</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

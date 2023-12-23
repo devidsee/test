@@ -62,4 +62,6 @@ class modbustool():
         single_register_value = self.master.execute(slave=1, function_code=cst.WRITE_SINGLE_REGISTER, starting_address=16,
                                                output_value=1)
         print('0x06 WRITE_SINGLE_REGISTER: ', single_register_value)
-
+if __name__ == '__main__':
+    modbus = modbustool('192.168.94.196','502')
+    modbus.wright_0t5v(2,0)
