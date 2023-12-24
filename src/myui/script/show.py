@@ -5,12 +5,16 @@ from PyQt5.QtWidgets import QApplication, QMainWindow
 # 导入designer工具生成的login模块
 from myui import Ui_MainWindow
 import rospy
-
-
+from std_msgs.msg import String
+import roslib
+from ..comser.modbustools import  modbustool
 class MyMainForm(QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None):
         super(MyMainForm, self).__init__(parent)
         self.setupUi(self)
+
+        rospy.init_node("control_root",anonymous=True)
+        self.pub = rospy.Publisher("base_msg",String,queue_size = 10)
 
         self.layer_sb.setRange(0, 100)  # 设置取值范围(最大值, 最小值)
         self.layer_sb.setValue(50)  # 设置当前值
@@ -32,6 +36,13 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
 
     def pushsb2pb(self):
         self.push_pro.setValue(self.push_sb.value())  # value()获得当前值
+    def connect(self):
+        self.modi6217 = modbustool(self.ip_i6217.getValue(),502)
+        self.modo6227 = modbustool(self.ip_o6224.getValue(),502)
+        self.modio_ip1 = modbustool(self.io_ip1.getValue(),502)
+        self.modio_ip2 = modbustool(self.io_ip2.getValue(),502) 
+        self.modio_ip3 = modbustool(self.io_ip3.getValue(),502)
+        self.modio_ip4 = modbustool(self.io_ip4.getValue(),502)
 
 
 if __name__ == "__main__":
@@ -41,6 +52,5 @@ if __name__ == "__main__":
     myWin = MyMainForm()
     # 将窗口控件显示在屏幕上
     myWin.show()
-    rospy.spin()
     # 程序运行，sys.exit方法确保程序完整退出。
     sys.exit(app.exec_())

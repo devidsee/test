@@ -306,7 +306,7 @@ background-color: rgb(211, 215, 207);</string>
         </widget>
        </item>
        <item row="2" column="1">
-        <widget class="QLabel" name="ip_o6217">
+        <widget class="QLabel" name="ip_o6224">
          <property name="text">
           <string>192.168.0.120</string>
          </property>
@@ -320,7 +320,7 @@ background-color: rgb(211, 215, 207);</string>
         </widget>
        </item>
        <item row="3" column="1">
-        <widget class="QLabel" name="io_ip100">
+        <widget class="QLabel" name="io_ip1">
          <property name="text">
           <string>192.168.0.110</string>
          </property>
@@ -334,7 +334,7 @@ background-color: rgb(211, 215, 207);</string>
         </widget>
        </item>
        <item row="4" column="1">
-        <widget class="QLabel" name="io_ip130">
+        <widget class="QLabel" name="io_ip2">
          <property name="text">
           <string>192.168.0.130</string>
          </property>
@@ -348,7 +348,7 @@ background-color: rgb(211, 215, 207);</string>
         </widget>
        </item>
        <item row="5" column="1">
-        <widget class="QLabel" name="io_ip140">
+        <widget class="QLabel" name="io_ip3">
          <property name="text">
           <string>192.168.0.140</string>
          </property>
@@ -362,7 +362,7 @@ background-color: rgb(211, 215, 207);</string>
         </widget>
        </item>
        <item row="6" column="1">
-        <widget class="QLabel" name="io_ip150">
+        <widget class="QLabel" name="io_ip4">
          <property name="text">
           <string>192.168.0.150</string>
          </property>
