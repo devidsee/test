@@ -4,6 +4,7 @@ import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow
 # 导入designer工具生成的login模块
 from myui import Ui_MainWindow
+import rospy
 
 
 class MyMainForm(QMainWindow, Ui_MainWindow):
@@ -40,5 +41,6 @@ if __name__ == "__main__":
     myWin = MyMainForm()
     # 将窗口控件显示在屏幕上
     myWin.show()
+    rospy.spin()
     # 程序运行，sys.exit方法确保程序完整退出。
     sys.exit(app.exec_())

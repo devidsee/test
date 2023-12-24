@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+from PyQt5.QtCore import Qt
+from PyQt5.QtWidgets import QVBoxLayout, QSlider, QHBoxLayout, QPushButton, QApplication
 
 ## BEGIN_TUTORIAL
 ##
